@@ -1,0 +1,1 @@
+socat UDP6-RECVFROM:30000,ipv6-join-group=[ff13::39]:br-lan,fork STDOUT 

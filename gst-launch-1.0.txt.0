@@ -1,0 +1,1 @@
+gst-launch-1.0 udpsrc address=ff12::39 multicast-iface=wlp3s0 auto-multicast=true port=5001 caps="application/x-rtp" ! rtpjitterbuffer ! rtpopusdepay ! opusdec ! audioconvert ! volume volume=1.0 ! audioresample ! autoaudiosink
